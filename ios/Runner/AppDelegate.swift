@@ -1,5 +1,6 @@
 import UIKit
 import Flutter
+import IntelliProveSDK
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
@@ -11,7 +12,7 @@ import Flutter
 
         let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
         let webviewChannel = FlutterMethodChannel(
-            name: "com.intelliprove/openWebview",
+            name: "com.intelliprove/webview",
             binaryMessenger: controller.binaryMessenger
         )
 
@@ -31,8 +32,19 @@ import Flutter
     }
 
     private func openWebView(urlString: String) {
-        let webViewController = IntelliWebViewFactory.newWebView(urlString: urlString)
+        let webViewController = IntelliWebViewFactory.newWebView(urlString: urlString, delegate: self)
         webViewController.modalPresentationStyle = .fullScreen
         window?.rootViewController?.present(webViewController, animated: true)
+    }
+}
+
+extension AppDelegate: IntelliWebViewDelegate {
+    func didReceive(postMessage: String) {
+        let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
+        let webviewChannel = FlutterMethodChannel(
+            name: "com.intelliprove/webview",
+            binaryMessenger: controller.binaryMessenger
+        )
+        webviewChannel.invokeMethod("didReceivePostMessage", arguments: postMessage)
     }
 }

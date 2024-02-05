@@ -14,7 +14,8 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		F0300EF12B58380B00145223 /* IntelliWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0300EF02B58380B00145223 /* IntelliWebView.swift */; };
+		F01DB3602B71878F00189B6B /* IntelliProveSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01DB35F2B71878F00189B6B /* IntelliProveSDK.xcframework */; };
+		F01DB3612B71878F00189B6B /* IntelliProveSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F01DB35F2B71878F00189B6B /* IntelliProveSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F01DB3612B71878F00189B6B /* IntelliProveSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +58,7 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0300EF02B58380B00145223 /* IntelliWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelliWebView.swift; sourceTree = "<group>"; };
+		F01DB35F2B71878F00189B6B /* IntelliProveSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntelliProveSDK.xcframework; path = Frameworks/IntelliProveSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01DB3602B71878F00189B6B /* IntelliProveSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,7 @@
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
+				F01DB35E2B71878F00189B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +123,16 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
-				F0300EF02B58380B00145223 /* IntelliWebView.swift */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		F01DB35E2B71878F00189B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F01DB35F2B71878F00189B6B /* IntelliProveSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
-				F0300EF12B58380B00145223 /* IntelliWebView.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

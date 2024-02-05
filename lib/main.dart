@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:convert';
 
 void main() {
   runApp(const MyApp());
@@ -32,13 +33,34 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  static const platform = MethodChannel('com.intelliprove/openWebview');
+  static const platform = MethodChannel('com.intelliprove/webview');
 
+  @override
+  void initState() {
+    super.initState();
+    // Add the Native callback handler during init
+    platform.setMethodCallHandler(handleNativeCallback);
+  }
+
+  // Bridge from Flutter to Native for presenting IntelliWebView
   void openWebView(String url) async {
     try {
       await platform.invokeMethod('openWebview', {'url': url});
     } on PlatformException catch (e) {
       print("Failed to open webview: ${e.message}");
+    }
+  }
+
+  // Callback from Native to Flutter with postMessage API body
+  Future<void> handleNativeCallback(MethodCall call) async {
+    if (call.method == 'didReceivePostMessage') {
+      String postMessage = call.arguments;
+      print("Flutter PostMessage Full Body: ${postMessage}");
+
+      // postMessage is received as JSON string, so we need to parse it
+      Map<String, dynamic> postData = jsonDecode(postMessage);
+      String stage = postData['stage'];
+      print("Flutter PostMessage Stage: $stage");
     }
   }
 
