@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
               onPressed: () => openWebView(
-                  'https://plugin-streaming-dev.intelliprove.com/?action_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiIiwiY3VzdG9tZXIiOiJOZWJ1bGFlIHRlc3RpbmciLCJncm91cCI6ImFkbWluIiwibWF4X21lYXN1cmVtZW50X2NvdW50IjoxMDAwfSwibWV0YSI6e30sImV4cCI6MTcxNTA3NDIyMn0.kQvGQD_8wFzmLjgFMuft_i3nWjAxSKWx5oI_FBFEYXI'),
+                  'https://wippy.intelliprove.com/?action_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiIiwiY3VzdG9tZXIiOiJ0ZXN0aW5nLWFwaS1rZXkiLCJncm91cCI6InN1cGVyLWFkbWluIiwibWF4X21lYXN1cmVtZW50X2NvdW50IjoxMDAwMCwidXNlcl9pZCI6ImFiMWJiMTQ1YjcyMTQ4ZjRhZmY3ZTgwYjBmMjVmMWUxIiwiYXV0aDBfdXNlcl9pZCI6bnVsbH0sIm1ldGEiOnt9LCJleHAiOjIwNzE3NTQwNDh9.LNVfPgR9GlfflaiRPiYoyYW7eVN7vEknNy6TJCeDzzk'),
               child: Text('Open WebView'),
             ),
           ],
