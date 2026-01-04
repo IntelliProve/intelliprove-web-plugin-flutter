@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IntelliProveSDK-Swift.h</key>
 		<data>
-		6GTZpiikF208fjNpDsvJuw4C748=
+		b30VsGz+djatiposlZRkW/iT3jQ=
 		</data>
 		<key>Headers/IntelliProveSDK.h</key>
 		<data>
@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eqhpPC5iXBlrwABBBqAJfgpsFmg=
+		n+nQgKSP4xBy8de3PiZd94rWvSI=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		sAjayWHR9FuOfQTBdVOc62WcYIM=
+		8U/xUJuS1J56D8JxoY/+DJTFY7c=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		keSfqKAFkAKg6ePnIPHZwq7OmV8=
+		MJu8XKGVegwR/AADQVg6Qw7bK8A=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		A3H/W8vqtlShT91YB6gqcfL2+0o=
+		Jm2Btyyn8phidBWHUetqxCigcDA=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		x6OvBr2kOQzWHoH/mHpUPrlZ77U=
+		nryYmNhK8CNLGTstUljmeHCrhbU=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		J7l1gO2+gchSYy+urdNbN/2d4fY=
+		+sjxcn8QF72IenfGzopbiLedgVA=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		x6OvBr2kOQzWHoH/mHpUPrlZ77U=
+		nryYmNhK8CNLGTstUljmeHCrhbU=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		H9vTF2c44MTWwJlP7JVVUIHAkRg=
+		4oOTdGkGrVhQM6QDRaIhoVOaVMA=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		A3H/W8vqtlShT91YB6gqcfL2+0o=
+		Jm2Btyyn8phidBWHUetqxCigcDA=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0+Xi0ybhDaSTF1Hak3Jpd5+kIDA=
+		iagRgw1Ze8W0X+9sICiWzrv23Fc=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Em04c5eVWEFeS/cVSRm2z8qKs60=
+		KA7I5x401KCiM+VfSEagj4iKyc0=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0+Xi0ybhDaSTF1Hak3Jpd5+kIDA=
+		iagRgw1Ze8W0X+9sICiWzrv23Fc=
 		</data>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3vGdHAv8iQ91XNiO8qXuskfXd0I=
+		2I8YFi+OL/L5+nVN6LmcwKX59es=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rffjPJwhXZXdOGckjrtYOs5ZBg6lm5VTdmkas95nxVo=
+			aa9JP8075fS976KXfnSLQk5zG8r2THlX/9u/YkNo+NM=
 			</data>
 		</dict>
 		<key>Headers/IntelliProveSDK.h</key>
@@ -89,84 +89,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OKNY4IndcDLiFv2nz5DHVhgHT++E/UxG8saKWoRR0r4=
+			qKER4SRw2rhystlvDn58cczUdERVOFF5oviiWTVV7rM=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			me15Zk906gvEGMJVVO6xb6/QEfsMHiPhNQnrZT5RCLA=
+			5NWqlt+75i8p5VowKkY1iblyiOWVCDp26LFxh23tmGA=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oF1QE/5DDzXi1ey+LepVQQpb6/aUA36iyT6+jJG30iA=
+			KV7R4mEsH3OvYCzyBx29GdHv4NnU5KZ1XNTzaIEb98A=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			re/ieZWS0x1grYQ5iq6ECiE91a9rwFnBQ8ff7DIFfhc=
+			jeDE9Hv5BowcCt+PJ80QtD/vXwDem7ujToCjz0NbzDk=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UoIDACvfCH9ses0zceYkXwLv5IPWP+oIro7FeECOLGk=
+			97CMIKKjF+hqOL8Sx93lWeP45z0wHBpGjOemWPy/yVQ=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			re/ieZWS0x1grYQ5iq6ECiE91a9rwFnBQ8ff7DIFfhc=
+			jeDE9Hv5BowcCt+PJ80QtD/vXwDem7ujToCjz0NbzDk=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1187IBa9+XFrxFhfeQmgUZ9GjOBV/QISvqJJBX2y80I=
+			bnzPG3HLBuMXRMeLvIzni/09NwRyd/FzJJqMtJMnOMk=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oF1QE/5DDzXi1ey+LepVQQpb6/aUA36iyT6+jJG30iA=
+			KV7R4mEsH3OvYCzyBx29GdHv4NnU5KZ1XNTzaIEb98A=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6YUHw4XgtuKy5IsIUdDL2LtAByHFoEAphU4kpENBCA8=
+			lMcZxr3aotId3YXS4BjmYtjY/YtgmcoHEHe8V6Q0c5g=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7oqC2sXmjFHPREZ+UMSpW1SeP6+7Gx6nHxsJ1YTJFXQ=
+			J4nBOxxdQ+pMAHhGlBgwqbfeg4iXcxzg3eWHThNYfSc=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6YUHw4XgtuKy5IsIUdDL2LtAByHFoEAphU4kpENBCA8=
+			lMcZxr3aotId3YXS4BjmYtjY/YtgmcoHEHe8V6Q0c5g=
 			</data>
 		</dict>
 		<key>Modules/IntelliProveSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3sBLZOrSdaTUaAnGvuuAyKt+j0y1mghcSf1cw+cJ/3I=
+			yHELyNqx6r9Va8AEcY7U5GiegI7y8PvtEHZrdve0Hj4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

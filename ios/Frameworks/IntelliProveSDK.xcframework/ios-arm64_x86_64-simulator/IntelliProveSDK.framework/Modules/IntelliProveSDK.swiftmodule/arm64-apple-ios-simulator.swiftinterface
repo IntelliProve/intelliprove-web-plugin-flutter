@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IntelliProveSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IntelliProveSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVKit
 import Foundation
 @_exported import IntelliProveSDK
@@ -11,14 +11,14 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct IntelliWebView : SwiftUI.UIViewControllerRepresentable {
-  public init(url: Swift.String, delegate: (any IntelliProveSDK.IntelliWebViewDelegate)? = nil)
-  @_Concurrency.MainActor(unsafe) public func makeUIViewController(context: IntelliProveSDK.IntelliWebView.Context) -> some UIKit.UIViewController
-  
-  @_Concurrency.MainActor(unsafe) public func updateUIViewController(_ uiViewController: @_opaqueReturnTypeOf("$s15IntelliProveSDK0A7WebViewV20makeUIViewController7contextQr7SwiftUI0gH20RepresentableContextVyACG_tF", 0) __, context: IntelliProveSDK.IntelliWebView.Context)
-  public typealias Body = Swift.Never
-  public typealias Coordinator = Swift.Void
-  public typealias UIViewControllerType = @_opaqueReturnTypeOf("$s15IntelliProveSDK0A7WebViewV20makeUIViewController7contextQr7SwiftUI0gH20RepresentableContextVyACG_tF", 0) __
+@_Concurrency.MainActor @preconcurrency public struct IntelliWebViewLink<Label> : SwiftUICore.View where Label : SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(urlString: Swift.String, delegate: (any IntelliProveSDK.IntelliWebViewDelegate)? = nil, @SwiftUICore.ViewBuilder label: @escaping () -> Label)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s15IntelliProveSDK0A11WebViewLinkV4bodyQrvp", 0) __<Label>
 }
 
 @_inheritsConvenienceInitializers @objc public class IntelliWebViewFactory : ObjectiveC.NSObject {
@@ -29,16 +29,4 @@ public struct IntelliWebView : SwiftUI.UIViewControllerRepresentable {
 @objc public protocol IntelliWebViewDelegate {
   @objc func didReceive(postMessage: Swift.String)
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class IntelliWebViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-  }
-  @objc deinit
-}
-extension IntelliProveSDK.IntelliWebViewController : WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
-}
-extension IntelliProveSDK.IntelliWebViewController : WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-}
+extension IntelliProveSDK.IntelliWebViewLink : Swift.Sendable {}
